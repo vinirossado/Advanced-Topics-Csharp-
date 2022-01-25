@@ -8,11 +8,16 @@ namespace DesignPatterns
     // where T : struct;
     // where T : class;
     // where T : new();
-    public class Utilities<T> where T : IComparable
+    public class Utilities<T> where T : IComparable, new()
     {
         public int Max(int a, int b)
         {
             return a > b ? a : b;
+        }
+
+        public void DoSomething(T value)
+        {
+            var obj = new T();
         }
 
         public T Max(T a, T b)
