@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns
+namespace AdvancedTopics
 {
     internal class Program
     {
