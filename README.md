@@ -1,2 +1,2 @@
-# Design-Patterns-C-
-Projeto para implementação e estudo de DP com .NET
+# Advanced-Topics-Csharp-
+Projeto para implementação e estudo de alguns topicos com .NET
