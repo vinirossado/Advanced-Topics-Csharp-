@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.Generics
+
 {
     //Types of constraints you can use;
     // where T : IComparable;

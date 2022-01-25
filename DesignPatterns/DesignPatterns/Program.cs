@@ -1,6 +1,5 @@
-﻿using DesignPatterns.Generics;
+﻿using DesignPatterns.Delegates;
 using System;
-using System.Collections.Generic;
 
 namespace DesignPatterns
 {
@@ -8,9 +7,7 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            var number = new Nullable<int>();
-            Console.WriteLine("Has Value ?" + number.HasValue);
-            Console.WriteLine("Value: " + number.GetValueOrDefault());
+            new PhotoProcessor();
         }
     }
 }

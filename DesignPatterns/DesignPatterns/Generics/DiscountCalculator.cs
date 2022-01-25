@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Generics;
 
-namespace DesignPatterns
+namespace DesignPatterns.Generics
+
 {
     public class DiscountCalculator<TProduct> where TProduct : Product
     {

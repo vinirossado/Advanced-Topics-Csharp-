@@ -1,4 +1,5 @@
-﻿namespace DesignPatterns
+﻿namespace DesignPatterns.Generics
+
 {
     public class Nullable<T> where T : struct
     {
