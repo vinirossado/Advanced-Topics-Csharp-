@@ -7,7 +7,11 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            new PhotoProcessor();
+            var processor = new PhotoProcessor();
+            var filters = new PhotoFilters();
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyContrast;
+            filterHandler += filters.ApplyBrightness;
+            processor.Process("", filterHandler);
         }
     }
 }
