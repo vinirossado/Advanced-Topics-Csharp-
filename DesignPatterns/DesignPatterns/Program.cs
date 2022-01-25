@@ -11,7 +11,13 @@ namespace DesignPatterns
             var filters = new PhotoFilters();
             PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyContrast;
             filterHandler += filters.ApplyBrightness;
+            filterHandler += RemoveRedEyeFilter;
             processor.Process("", filterHandler);
+        }
+
+        static void RemoveRedEyeFilter(Photo photo)
+        {
+            Console.WriteLine("Apply RemoveRedEye");
         }
     }
 }
