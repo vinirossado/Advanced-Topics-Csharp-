@@ -9,7 +9,7 @@ namespace DesignPatterns
         {
             var processor = new PhotoProcessor();
             var filters = new PhotoFilters();
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyContrast;
+            Action<Photo> filterHandler = filters.ApplyContrast;
             filterHandler += filters.ApplyBrightness;
             filterHandler += RemoveRedEyeFilter;
             processor.Process("", filterHandler);
