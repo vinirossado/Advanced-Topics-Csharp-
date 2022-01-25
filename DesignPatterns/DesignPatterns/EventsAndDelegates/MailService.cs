@@ -1,7 +1,7 @@
 ﻿using System;
-using DesignPatterns.EventsAndDelegates;
 
-namespace DesignPatterns
+namespace DesignPatterns.EventsAndDelegates
+
 {
     public class MailService
     {

@@ -1,7 +1,4 @@
-﻿using DesignPatterns.Delegates;
-using DesignPatterns.Generics;
-using System;
-using DesignPatterns.EventsAndDelegates;
+﻿using System;
 
 namespace DesignPatterns
 {
@@ -23,27 +20,46 @@ namespace DesignPatterns
         //        }
         //    }
         //}
-        #endregion Lamba Expression
 
+        #endregion Lamba Expression
 
         #region Events and Delegates
 
+        //    static void Main(string[] args)
+        //    {
+        //        var video = new Video() { Title = "Video 1" };
+        //        var videoEncoder = new VideoEncoder(); //Publisher
+        //        var mailService = new MailService(); //Subscriber
+        //        var messageService = new MessageService(); //Subscriber
+
+
+        //        videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+        //        videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
+        //        videoEncoder.Encode(video);
+        //    }
+
+
+
+        //}
+
+        #endregion Events and Delegates
+
+        #region ExtensionsMethods
+
+        //static void Main(string[] args)
+        //{
+
+        //    string post = "This is a supposed to be a very looong blog post ....";
+        //    var shortenedPost = post.Shorten(3);
+        //    Console.WriteLine(shortenedPost);
+        //}
+
+        #endregion Extensions
+
         static void Main(string[] args)
         {
-            var video = new Video() { Title = "Video 1" };
-            var videoEncoder = new VideoEncoder(); //Publisher
-            var mailService = new MailService(); //Subscriber
-            var messageService = new MessageService(); //Subscriber
 
-
-            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
-            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
-            videoEncoder.Encode(video);
         }
 
-
-        
     }
-    #endregion Events and Delegates
-
 }
